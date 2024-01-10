@@ -6,8 +6,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Wallet extends Application {
+
+    private String nom;
+    private List<Bienfinancier> bienfinanciers;
+
+    public void stocker() {
+        // Implémentation de la méthode stocker
+    }
 
     @Override
     public void start(Stage stage) throws IOException {
