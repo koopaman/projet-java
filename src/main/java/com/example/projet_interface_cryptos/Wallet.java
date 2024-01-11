@@ -24,5 +24,6 @@ public class Wallet extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+        fsqfqsdf
     }
 }
