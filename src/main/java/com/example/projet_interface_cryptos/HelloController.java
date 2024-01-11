@@ -18,6 +18,10 @@ public class HelloController {
     @FXML
     private Label prout;
     @FXML
-    protected void onCickme() {prout.setText("laaaa");
-    }
+    protected void onCickme() {prout.setText("laaaa");}
+
+    @FXML
+    private Label button1;
+    @FXML
+    protected void setButton1() {button1.setText("chargement");}
 }
