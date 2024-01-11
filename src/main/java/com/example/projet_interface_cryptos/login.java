@@ -12,7 +12,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
 
-public class app extends Application {
+public class login extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -158,8 +158,5 @@ public class app extends Application {
                 root.addRow(7, t);
             }
         });
-    } 
-    public static void main(String[] args) {
-        launch(args);
     }
 }
