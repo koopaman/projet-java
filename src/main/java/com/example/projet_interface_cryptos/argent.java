@@ -17,5 +17,6 @@ public class argent extends Application {
         SceneManager.setCurrenStage(stage);
         stage.show();
         stage.centerOnScreen();
+        // modif
     }
 }
