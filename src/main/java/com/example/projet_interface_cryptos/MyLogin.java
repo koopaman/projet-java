@@ -19,7 +19,7 @@ public class MyLogin extends Application {
         primaryStage = stage;
         FXMLLoader fxmlLoader = new
                 FXMLLoader(
-                HelloApplication.class.getResource(
+                Wallet.class.getResource(
                         "Mylogin.fxml"
 
                 )

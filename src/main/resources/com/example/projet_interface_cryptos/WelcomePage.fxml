@@ -3,21 +3,22 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="436.0" prefWidth="527.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.HelloController">
+<VBox alignment="CENTER" prefHeight="436.0" prefWidth="527.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.welcomeController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <ImageView fitHeight="108.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../../../../../images/se%20connecter.jpg" />
-      </image>
-   </ImageView>
-    <Button onAction="#setButton1" prefHeight="10.0" prefWidth="83.0" text="se connecter" />
-
-    <Label fx:id="button1" onDragDetected="#setButton1" />
+   <Pane prefHeight="451.0" prefWidth="487.0">
+      <children>
+         <Button layoutX="42.0" layoutY="42.0" mnemonicParsing="false" onAction="#setButton1" prefHeight="26.0" prefWidth="94.0" text="Button" />
+          <Button layoutX="16.0" layoutY="100.0" onAction="#buttonbancaire" prefHeight="26.0" prefWidth="152.0" text="compte bancaire" />
+      
+                <Label fx:id="button1" layoutX="227.0" layoutY="45.0" onDragDetected="#setButton1" prefHeight="18.0" prefWidth="114.0" />
+         <Button layoutX="16.0" layoutY="150.0" onAction="#buttoncrypto" prefHeight="26.0" prefWidth="152.0" text="compte cryptos" />
+         <Button layoutX="16.0" layoutY="198.0" onAction="#buttonaction" prefHeight="26.0" prefWidth="152.0" text="compte actions" />
+      </children>
+   </Pane>
 
 </VBox>

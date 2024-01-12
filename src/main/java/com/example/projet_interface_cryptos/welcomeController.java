@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class welcomeController {
 
 
     @FXML
@@ -28,4 +28,17 @@ public class HelloController {
     protected void setButton1(ActionEvent e) {
         SceneManager.changeScene("/com/example/projet_interface_cryptos/MyLogin.fxml", "actifs");
     }
+    @FXML
+    protected void buttonbancaire(ActionEvent e) {
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/MyLogin.fxml", "actifs");
+    }
+    @FXML
+    protected void buttoncrypto(ActionEvent e) {
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/MyLogin.fxml", "actifs");
+    }
+    @FXML
+    protected void buttonaction(ActionEvent e) {
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/compte actions.fxml", "actifs");
+    }
+
 }
