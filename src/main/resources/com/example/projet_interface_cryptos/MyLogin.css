@@ -6,12 +6,12 @@
     -fx-font-size: 18px;
     -fx-font-weight: bold;
     -fx-font-family: "Adobe Devanagari";
-    -fx-text-fill: linear-gradient(deepskyblue,whitesmoke);
+    -fx-text-fill: black;
 
 }
 #title{
     -fx-font-size: 36px;
-    -fx-font-family: "Adobe Devanagari";
+    -fx-font-family: "Brush Script MT";
     -fx-font-weight: bold;
     -fx-text-fill: darkorange;
 }
@@ -26,5 +26,5 @@
     -fx-font-size: 22px;
     -fx-font-family: "Adobe Devanagari";
     -fx-font-weight: bold;
-    -fx-background-color: linear-gradient(#0E4543, #63E152);
+    -fx-background-color: black;
 }
