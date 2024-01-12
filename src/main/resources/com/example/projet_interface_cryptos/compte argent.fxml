@@ -3,9 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.argentController">
    <children>
-      <Button layoutX="463.0" layoutY="323.0" mnemonicParsing="false" onAction="#retourwelcome" text="retour" />
+      <Button layoutX="510.0" layoutY="340.0" mnemonicParsing="false" onAction="#retourargent" text="retour" />
    </children>
 </AnchorPane>
