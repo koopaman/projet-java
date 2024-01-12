@@ -25,12 +25,13 @@ public class MyLogin extends Application {
                 )
         );
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        scene.getStylesheets().add(MyLogin.class.getResource("MyLogin.css").toExternalForm());
+
         stage.setTitle("login");
         stage.setScene(scene);
         stage.setScene(scene);
         SceneManager.setCurrenStage(stage);
         stage.show();
+        scene.getStylesheets().add(MyLogin.class.getResource("MyLogin.css").toExternalForm());
     }
 
     public static void main(String[] args) {

@@ -30,11 +30,11 @@ public class welcomeController {
     }
     @FXML
     protected void buttonbancaire(ActionEvent e) {
-        SceneManager.changeScene("/com/example/projet_interface_cryptos/MyLogin.fxml", "actifs");
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/compte argent.fxml", "actifs");
     }
     @FXML
     protected void buttoncrypto(ActionEvent e) {
-        SceneManager.changeScene("/com/example/projet_interface_cryptos/MyLogin.fxml", "actifs");
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/compte crypto.fxml", "actifs");
     }
     @FXML
     protected void buttonaction(ActionEvent e) {
