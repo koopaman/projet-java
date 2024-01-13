@@ -14,13 +14,26 @@ public class MyLoginController {
     @FXML
     public  Label  title;
     @FXML
-    private Label submission;
+    private Label loginmessagelabel;
+
+
 
     @FXML
     protected void onHelloButtonClick(ActionEvent e){
-        String emailText = username.getText();
-        String passwordText = password.getText();
-        SceneManager.changeScene("/com/example/projet_interface_cryptos/WelcomePage.fxml", "actifs");
+        if (username.getText().isBlank() && password.getText().isBlank()){
+            loginmessagelabel.setText("svp entrez des coordonnées valides");
+
+        }
+        else {
+            SceneManager.changeScene("/com/example/projet_interface_cryptos/WelcomePage.fxml", "actifs");
+        }
+    }
+
+
+    @FXML
+    protected void logintosignup(ActionEvent e) {
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/SignUp.fxml", "login");
+
     }
 
 }

@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.projet_interface_cryptos.MyLoginController">
 
-    <padding>
-        <Insets bottom="20" left="20" right="20" top="20" />
-    </padding>
-
-    <Label fx:id="title" text="Sign In Form" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
-    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-    <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-    <HBox alignment="BOTTOM_RIGHT" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
-        <Button onAction="#onHelloButtonClick" text="Submit!" />
-    </HBox>
-
-    <Label fx:id="submission" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
-
-</GridPane>
+<BorderPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.MyLoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+         
+                <Label fx:id="title" alignment="CENTER" layoutY="145.0" prefHeight="17.0" prefWidth="229.0" text="Sign In Form" textFill="#fcfcfc">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="53.0" layoutX="127.0" layoutY="200.0" startX="-78.0" stroke="WHITE" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="313.0" BorderPane.alignment="CENTER">
+         <children>
+             <Label layoutX="14.0" layoutY="100.0" text="Username:" />
+             <Label layoutX="16.0" layoutY="144.0" text="Password:" />
+             <TextField fx:id="username" layoutX="114.0" layoutY="96.0" promptText="username" />
+             <PasswordField fx:id="password" layoutX="114.0" layoutY="149.0" promptText="password" />
+              <Button fx:id="loginbutton" layoutX="189.0" layoutY="320.0" onAction="#onHelloButtonClick" style="-fx-background-color: #263F73;" text="login" textFill="WHITE" />
+            <Label fx:id="loginmessagelabel" alignment="CENTER" layoutX="1.0" layoutY="239.0" prefHeight="17.0" prefWidth="314.0" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="signupgo" layoutX="31.0" layoutY="320.0" onAction="#logintosignup" style="-fx-background-color: #263F73;" text="créer un compte" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

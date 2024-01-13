@@ -3,6 +3,7 @@ package com.example.projet_interface_cryptos;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class SceneManager {
 
