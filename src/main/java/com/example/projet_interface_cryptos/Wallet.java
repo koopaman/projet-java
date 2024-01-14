@@ -12,6 +12,8 @@ import java.util.List;
 public class Wallet extends Application {
 
 
+    private Object Wallet;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Wallet.class.getResource("Welcomepage.fxml"));
@@ -21,4 +23,14 @@ public class Wallet extends Application {
         stage.show();
         stage.centerOnScreen();
     }
+    private double balance;
+    private int numberOfCoins;
+    private int numberOfCryptos;
+    private int numberOfActions;
+
+    public void setWallet(Wallet wallet) {
+        this.Wallet = Wallet;
+    }
 }
+
+
