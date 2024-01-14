@@ -34,7 +34,7 @@
                <Font size="13.0" />
             </font>
          </Button>
-         <TextField fx:id="symbol" layoutX="154.0" layoutY="298.0" />
+         <TextField fx:id="symbol" layoutX="154.0" layoutY="298.0" promptText="nom d'action" />
          <Label fx:id="stockText" layoutX="178.0" layoutY="343.0" prefHeight="17.0" prefWidth="245.0" style="-fx-background-color: #263F73;" textFill="WHITE" />
          <AnchorPane layoutX="-42.0" layoutY="-40.0" prefHeight="108.0" prefWidth="557.0" style="-fx-background-color: #263F73;">
             <children>
