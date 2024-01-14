@@ -5,6 +5,6 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.argentController">
    <children>
-      <Button layoutX="510.0" layoutY="340.0" mnemonicParsing="false" onAction="#retourargent" text="retour" />
+      <Button layoutX="510.0" layoutY="340.0" mnemonicParsing="false" onAction="#retourargent" style="-fx-background-color: #263F73;" text="retour" textFill="WHITE" />
    </children>
 </AnchorPane>
