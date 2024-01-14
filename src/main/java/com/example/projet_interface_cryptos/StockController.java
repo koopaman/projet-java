@@ -12,10 +12,8 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class StockController {
-
     private static String API_URL =
-            "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=" +
-                    "SEARCH_SYMBOL&interval=1min&apikey=FUND9T398QBJRUEL" ;
+            "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=SEARCH_SYMBOL&interval=1min&apikey=FXKRRKK2FWVFZSZG" ;
     @FXML
     private TextField symbol;
     @FXML
@@ -39,8 +37,9 @@ public class StockController {
     private JSONObject getStockData(String apiUrl) throws IOException {
         URL url = URI.create(apiUrl).toURL();
         HttpURLConnection connection = (HttpURLConnection)
-                ((URL) url).openConnection();
-        try (Scanner scanner = new Scanner(new InputStreamReader(connection.getInputStream()))) {
+                url.openConnection();
+        try (Scanner scanner = new Scanner(new
+                InputStreamReader(connection.getInputStream()))) {
             scanner.useDelimiter("\\A");
             String response = scanner.hasNext() ? scanner.next() : "";
             return new JSONObject(response);
