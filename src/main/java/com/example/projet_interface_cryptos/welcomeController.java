@@ -19,7 +19,7 @@ public class welcomeController {
 
     @FXML
     protected void setButton1(ActionEvent e) {
-        SceneManager.changeScene("/com/example/projet_interface_cryptos/MyLogin.fxml", "login");
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/Stock.fxml", "login");
 
     }
     @FXML
