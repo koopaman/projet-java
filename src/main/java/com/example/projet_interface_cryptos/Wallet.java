@@ -28,6 +28,9 @@ public class Wallet extends Application {
     private int numberOfCryptos;
     private int numberOfActions;
 
+
+
+
     public void setWallet(Wallet wallet) {
         this.Wallet = Wallet;
     }
