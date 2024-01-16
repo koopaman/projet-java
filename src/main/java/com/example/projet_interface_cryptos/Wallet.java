@@ -23,17 +23,45 @@ public class Wallet extends Application {
         stage.show();
         stage.centerOnScreen();
     }
+
     private double balance;
     private int numberOfCoins;
     private int numberOfCryptos;
+    private int numberOfActions;
 
+    public double getBalance() {
+        return balance;
+    }
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 
+    public int getNumberOfCoins() {
+        return numberOfCoins;
+    }
 
+    public void setNumberOfCoins(int numberOfCoins) {
+        this.numberOfCoins = numberOfCoins;
+    }
 
-    public void setWallet(Wallet wallet) {
-        this.Wallet = Wallet;
+    public int getNumberOfCryptos() {
+        return numberOfCryptos;
+    }
+
+    public void setNumberOfCryptos(int numberOfCryptos) {
+        this.numberOfCryptos = numberOfCryptos;
+    }
+
+    public int getNumberOfActions() {
+        return numberOfActions;
+    }
+
+    public void setNumberOfActions(int numberOfActions) {
+        this.numberOfActions = numberOfActions;
     }
 }
+
+
 
 
