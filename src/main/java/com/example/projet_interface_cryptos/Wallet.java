@@ -26,7 +26,7 @@ public class Wallet extends Application {
     private double balance;
     private int numberOfCoins;
     private int numberOfCryptos;
-    private int numberOfActions;
+
 
 
 

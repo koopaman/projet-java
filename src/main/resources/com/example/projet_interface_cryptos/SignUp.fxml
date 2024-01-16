@@ -35,9 +35,13 @@
             <PasswordField fx:id="password" layoutX="114.0" layoutY="149.0" promptText="password" />
             <Button fx:id="signupbutton" layoutX="189.0" layoutY="320.0" onAction="#signuptologin" style="-fx-background-color: #263F73;" text="submit" textFill="WHITE" />
             <Label layoutX="14.0" layoutY="207.0" prefHeight="18.0" prefWidth="63.0" text="messagerie" />
-            <Label layoutX="14.0" layoutY="249.0" prefHeight="18.0" prefWidth="97.0" text="nom et présnom" />
+            <Label layoutX="14.0" layoutY="249.0" prefHeight="18.0" prefWidth="97.0" text="nom" />
             <TextField fx:id="messagerie" layoutX="114.0" layoutY="212.0" promptText="messagerie" />
-            <TextField fx:id="nomprenom" layoutX="114.0" layoutY="245.0" promptText="nom et prénom" />
+            <TextField fx:id="nomprenom" layoutX="114.0" layoutY="245.0" promptText="nom" />
+            <Label layoutX="14.0" layoutY="289.0" prefHeight="18.0" prefWidth="97.0" text="Prénom" />
+            <TextField fx:id="nomprenom1" layoutX="114.0" layoutY="285.0" promptText="prénom" />
+            <Label fx:id="test" layoutX="49.0" layoutY="337.0" onDragDetected="#test" text="Label" />
+            <Button fx:id="signupbutton1" layoutX="88.0" layoutY="325.0" onAction="#registerUser" style="-fx-background-color: #263F73;" text="submit" textFill="WHITE" />
          </children>
       </AnchorPane>
    </center>

@@ -3,8 +3,10 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" prefHeight="436.0" prefWidth="527.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.welcomeController">
     <padding>
@@ -12,12 +14,29 @@
     </padding>
    <Pane prefHeight="451.0" prefWidth="487.0">
       <children>
-         <Button layoutX="42.0" layoutY="42.0" mnemonicParsing="false" onAction="#setButton1" prefHeight="26.0" prefWidth="94.0" text="Button" />
-          <Button layoutX="16.0" layoutY="100.0" onAction="#buttonbancaire" prefHeight="26.0" prefWidth="152.0" text="compte bancaire" />
+          <Button layoutX="16.0" layoutY="100.0" onAction="#buttonbancaire" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #263F73;" text="compte bancaire" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
       
                 <Label fx:id="button1" layoutX="227.0" layoutY="45.0" onDragDetected="#setButton1" prefHeight="18.0" prefWidth="114.0" />
-         <Button layoutX="16.0" layoutY="150.0" onAction="#buttoncrypto" prefHeight="26.0" prefWidth="152.0" text="compte cryptos" />
-         <Button layoutX="16.0" layoutY="198.0" onAction="#buttonaction" prefHeight="26.0" prefWidth="152.0" text="compte actions" />
+         <Button layoutX="16.0" layoutY="150.0" onAction="#buttoncrypto" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #263F73;" text="compte cryptos" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+         <Button layoutX="16.0" layoutY="198.0" onAction="#buttonaction" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: #263F73;" text="compte actions" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+         <Button layoutX="16.0" layoutY="270.0" mnemonicParsing="false" onAction="#getStockInfo" style="-fx-background-color: #263F73;" text="Button" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
+         <TextField fx:id="symbol" layoutX="86.0" layoutY="271.0" />
+         <Label fx:id="stockText" layoutX="86.0" layoutY="307.0" prefHeight="19.0" prefWidth="383.0" style="-fx-background-color: #263F73;" text="valeur API" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Label>
       </children>
    </Pane>
 
