@@ -28,12 +28,12 @@
             <font>
                <Font size="13.0" />
             </font></Button>
-         <Button layoutX="43.0" layoutY="270.0" mnemonicParsing="false" onAction="#getStockInfo" style="-fx-background-color: #263F73;" text="Button" textFill="WHITE">
+         <Button layoutX="16.0" layoutY="270.0" mnemonicParsing="false" onAction="#getStockInfo" style="-fx-background-color: #263F73;" text="Button" textFill="WHITE">
             <font>
                <Font size="13.0" />
             </font></Button>
-         <TextField fx:id="symbol" layoutX="125.0" layoutY="271.0" />
-         <Label fx:id="stockText" layoutX="315.0" layoutY="275.0" prefHeight="17.0" prefWidth="130.0" style="-fx-background-color: #263F73;" text="valeur API" textFill="WHITE">
+         <TextField fx:id="symbol" layoutX="86.0" layoutY="271.0" />
+         <Label fx:id="stockText" layoutX="86.0" layoutY="307.0" prefHeight="19.0" prefWidth="383.0" style="-fx-background-color: #263F73;" text="valeur API" textFill="WHITE">
             <font>
                <Font size="13.0" />
             </font></Label>

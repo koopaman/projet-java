@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.MyLoginController">
    <left>
       <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
@@ -35,13 +34,13 @@
              <Label layoutX="16.0" layoutY="144.0" text="Password:" />
              <TextField fx:id="username" layoutX="114.0" layoutY="96.0" promptText="username" />
              <PasswordField fx:id="password" layoutX="114.0" layoutY="149.0" promptText="password" />
-              <Button fx:id="loginbutton" layoutX="189.0" layoutY="320.0" onAction="#onHelloButtonClick" style="-fx-background-color: #263F73;" text="login" textFill="WHITE" />
             <Label fx:id="loginmessagelabel" alignment="CENTER" layoutX="1.0" layoutY="239.0" prefHeight="17.0" prefWidth="314.0" textFill="RED">
                <font>
                   <Font size="13.0" />
                </font>
             </Label>
             <Button fx:id="signupgo" layoutX="31.0" layoutY="320.0" onAction="#logintosignup" style="-fx-background-color: #263F73;" text="créer un compte" textFill="WHITE" />
+            <Button layoutX="189.0" layoutY="320.0" onAction="#validateLogin" style="-fx-background-color: #263F73;" text="se connecter" textFill="WHITE" />
          </children>
       </AnchorPane>
    </right>
