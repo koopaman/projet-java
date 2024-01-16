@@ -51,4 +51,14 @@ public class BienFinancier {
     public Map<String, Integer> getQuantitesActions() {
         return quantitesActions;
     }
+
+    public boolean IsValidPayed(String typeActif, String nom, double quantite) {
+        if (typeActif.equalsIgnoreCase("crypto") && quantitesCryptos.containsKey(nom) && quantitesCryptos.get(nom) >= quantite) {
+            return true;
+        } else if (typeActif.equalsIgnoreCase("action") && quantitesActions.containsKey(nom) && quantitesActions.get(nom) >= quantite) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
