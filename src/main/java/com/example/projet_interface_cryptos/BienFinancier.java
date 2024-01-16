@@ -42,9 +42,7 @@ public class BienFinancier {
         }
     }
 
-    public Map<String, Double> getSoldesArgent() {
-        return soldesArgent;
-    }
+    public Map<String, Double> getSoldesArgent() { return soldesArgent; }
 
     public Map<String, Double> getQuantitesCryptos() {
         return quantitesCryptos;
