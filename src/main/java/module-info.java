@@ -5,7 +5,7 @@ module com.example.projet_interface_cryptos {
     requires java.sql;
     requires java.net.http;
     requires com.opencsv;
-
+    requires mysql.connector.j;
 
     opens com.example.projet_interface_cryptos to javafx.fxml;
     exports com.example.projet_interface_cryptos;
