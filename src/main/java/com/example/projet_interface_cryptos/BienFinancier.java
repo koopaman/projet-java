@@ -1,5 +1,7 @@
 package com.example.projet_interface_cryptos;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,6 +27,7 @@ public class BienFinancier {
         } else {
             System.out.println("Achat impossible. Solde insuffisant.");
         }
+        afficherDateHeureTransaction();
     }
 
     public void Vendre(String typeActif, String nom, double quantite) {
@@ -40,6 +43,7 @@ public class BienFinancier {
         } else {
             System.out.println("Vente impossible. Quantité insuffisante.");
         }
+        afficherDateHeureTransaction();
     }
 
     public Map<String, Double> getSoldesArgent() { return soldesArgent; }
@@ -61,4 +65,12 @@ public class BienFinancier {
             return false;
         }
     }
+
+    private void afficherDateHeureTransaction() {
+        Date date = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String dateHeure = dateFormat.format(date);
+        System.out.println("Date et heure de la transaction : " + dateHeure);
+    }
+
 }
