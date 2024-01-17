@@ -72,5 +72,4 @@ public class BienFinancier {
         String dateHeure = dateFormat.format(date);
         System.out.println("Date et heure de la transaction : " + dateHeure);
     }
-
 }
