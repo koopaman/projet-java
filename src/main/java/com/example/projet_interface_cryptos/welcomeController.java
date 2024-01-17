@@ -31,6 +31,7 @@ public class welcomeController {
         SceneManager.changeScene("/com/example/projet_interface_cryptos/Stock.fxml", "login");
 
     }
+
     @FXML
     protected void buttonbancaire(ActionEvent e) {
         SceneManager.changeScene("/com/example/projet_interface_cryptos/compte argent.fxml", "actifs en cash");
@@ -51,6 +52,8 @@ public class welcomeController {
     @FXML
     private Label stockText;
     public void getStockInfo() {
+        // TODO (alexis): delete this line
+        System.out.println("I was clicked with " + symbol.getText());
         String stockSymbol = symbol.getText();
         String apiUrlWithKey = API_URL.replace("SEARCH_SYMBOL", stockSymbol);
         try {
@@ -91,7 +94,4 @@ public class welcomeController {
             connection.disconnect();
         }
     }
-
-
-
 }

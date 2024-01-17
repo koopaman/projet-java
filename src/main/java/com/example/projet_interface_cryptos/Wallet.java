@@ -2,7 +2,12 @@ package com.example.projet_interface_cryptos;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -17,11 +22,25 @@ public class Wallet extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Wallet.class.getResource("Welcomepage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-        stage.setScene(scene);
+        double width = Screen.getPrimary().getBounds().getWidth();
+        double height = Screen.getPrimary().getBounds().getHeight();
+        double appWidth = width * .70;
+        double appHeight = height * .80;
+        Parent wallet = (new Scene(fxmlLoader.load(), appWidth, appHeight * .5)).getRoot();
+        VBox vBox = new VBox();
+        vBox.getChildren().add(wallet);
+        ListView<String> symbolListView = new ListView<>();
+        List<String> symbols = CryptoApp.getCryptoSymbolsFromCSV();
+        int maxSymbols = Math.min(symbols.size(), 100);
+        symbolListView.getItems().addAll(symbols.subList(0, maxSymbols));
+        // VBox root = new VBox(symbolListView);
+        vBox.getChildren().add(symbolListView);
         SceneManager.setCurrenStage(stage);
         stage.show();
         stage.centerOnScreen();
+        Scene scene = new Scene(vBox, appWidth, appHeight);
+        stage.setScene(scene);
+        stage.show();
     }
 
     private double balance;

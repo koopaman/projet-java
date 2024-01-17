@@ -33,7 +33,7 @@ public class CryptoApp extends Application {
         primaryStage.show();
     }
 
-    private List<String> getCryptoSymbolsFromCSV() {
+    public static List<String> getCryptoSymbolsFromCSV() {
         List<String> symbols = new ArrayList<>();
 
         try (CSVReader reader = new CSVReader(new FileReader("listing_status.csv"))) {
