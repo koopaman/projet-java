@@ -67,7 +67,7 @@ public class welcomeController {
                 // Obtient le prix de clôture
                 String latestPrice = latestData.getString("4. close");
 
-                stockText.setText("Latest Stock Price for " + stockSymbol + " is : $" + latestPrice);
+                stockText.setText("l'action de " + stockSymbol + " vaut " + latestPrice + " dollars ");
             } else {
                 // Gérez le cas où la clé "Time Series (1min)" n'est pas présente
                 stockText.setText("aucune valeur trouvée");
@@ -91,5 +91,7 @@ public class welcomeController {
             connection.disconnect();
         }
     }
+
+
 
 }
