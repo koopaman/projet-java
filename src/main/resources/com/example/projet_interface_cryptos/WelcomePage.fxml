@@ -41,6 +41,11 @@
             <font>
                <Font size="13.0" />
             </font></Button>
+         <Button layoutX="341.0" layoutY="164.0" mnemonicParsing="false" onAction="#vendrebutton" style="-fx-background-color: #263F73;" text="vendre" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Button>
       </children>
    </Pane>
 

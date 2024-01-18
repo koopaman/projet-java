@@ -23,5 +23,10 @@ public class vendreController {
 
         System.out.println("Vente : " + quantity + " " + name + " pour " + price + " $ chacune. Coût total : " + totalCost + " $");
     }
+    @FXML
+    protected void retourvendre(ActionEvent e){
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/WelcomePage.fxml", "actifs");
+    }
+
 
 }
