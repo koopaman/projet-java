@@ -29,7 +29,6 @@ public class CryptoApp extends Application {
         primaryStage.setTitle("Liste des Cryptos/Actions");
         primaryStage.setScene(scene);
 
-        // Affiche la scène principale
         primaryStage.show();
     }
 

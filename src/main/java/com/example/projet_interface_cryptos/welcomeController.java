@@ -31,6 +31,11 @@ public class welcomeController {
         SceneManager.changeScene("/com/example/projet_interface_cryptos/Stock.fxml", "login");
 
     }
+    @FXML
+    protected void acheterbutton(ActionEvent e) {
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/acheter.fxml", "acheter des actions/cryptos");
+    }
+
 
     @FXML
     protected void buttonbancaire(ActionEvent e) {
