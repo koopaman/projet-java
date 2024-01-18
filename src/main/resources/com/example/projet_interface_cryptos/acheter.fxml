@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.acheterController">
     <children>
         <VBox layoutX="40.0" layoutY="40.0" spacing="20.0">
-            <Label text="Acheter une Action/Crypto"/>
+            <Label text="Acheter une Action/Crypto" />
             <HBox spacing="10.0">
-                <Label text="Nom:"/>
-                <TextField fx:id="nameTextField"/>
+                <Label text="Nom:" />
+                <TextField fx:id="nameTextField" />
             </HBox>
             <HBox spacing="10.0">
-                <Label text="Quantité:"/>
-                <TextField fx:id="quantityTextField"/>
+                <Label text="Quantité:" />
+                <TextField fx:id="quantityTextField" />
             </HBox>
             <HBox spacing="10.0">
-                <Label text="Prix unitaire:"/>
-                <TextField fx:id="priceTextField"/>
+                <Label text="Prix unitaire:" />
+                <TextField fx:id="priceTextField" />
             </HBox>
-            <Button text="Acheter" onAction="#buyButtonClicked"/>
+            <Button onAction="#buyButtonClicked" style="-fx-background-color: #263F73;" text="Acheter" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
         </VBox>
+      <Button layoutX="520.0" layoutY="350.0" mnemonicParsing="false" onAction="#retouracheter" style="-fx-background-color: #263F73;" text="retour" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

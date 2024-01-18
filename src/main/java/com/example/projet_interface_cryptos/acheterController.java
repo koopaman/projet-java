@@ -24,4 +24,9 @@ public class acheterController {
         System.out.println("Achat : " + quantity + " " + name + " pour " + price + " $ chacune. Coût total : " + totalCost + " $");
     }
 
+    @FXML
+    protected void retouracheter(ActionEvent e){
+        SceneManager.changeScene("/com/example/projet_interface_cryptos/WelcomePage.fxml", "actifs");
+    }
+
 }
