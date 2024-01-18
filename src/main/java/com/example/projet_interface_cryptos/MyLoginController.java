@@ -38,6 +38,7 @@ public class MyLoginController {
         while(queryResult.next()){
             if (queryResult.getInt(1) == 1) {
                 SceneManager.changeScene("/com/example/projet_interface_cryptos/WelcomePage.fxml", "actifs");
+
             } else  {
                 loginmessagelabel.setText("rentrez des valeurs valides");
             }
@@ -46,6 +47,5 @@ public class MyLoginController {
         e.printStackTrace();
     }
     }
-
 }
 
