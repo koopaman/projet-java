@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_interface_cryptos.acheterController">
     <children>
         <VBox layoutX="40.0" layoutY="40.0" spacing="20.0">
-            <Label text="Acheter une Action/Crypto" />
+            <Label text="Vendre une Action/Crypto" />
             <HBox spacing="10.0">
                 <Label text="Nom:" />
                 <TextField fx:id="nameTextField" />
@@ -24,8 +24,8 @@
                 <TextField fx:id="priceTextField" />
             </HBox>
         </VBox>
-         <Button layoutX="34.0" layoutY="257.0" onAction="#buyButtonClicked" text="Acheter" />
-      <TextField fx:id="priceTextField1" layoutX="84.0" layoutY="218.0" />
-      <Label layoutX="40.0" layoutY="222.0" text="Total : " />
+         <Button layoutX="38.0" layoutY="255.0" onAction="#buyButtonClicked" text="Vendre" />
+      <TextField fx:id="nameTextField1" layoutX="92.0" layoutY="209.0" />
+      <Label layoutX="40.0" layoutY="213.0" text="Total : " />
     </children>
 </AnchorPane>
