@@ -15,7 +15,7 @@
       <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
          <children>
          
-                <Label fx:id="title" alignment="CENTER" layoutY="145.0" prefHeight="17.0" prefWidth="229.0" text="Sign In Form" textFill="#fcfcfc">
+                <Label fx:id="title" alignment="CENTER" layoutY="145.0" prefHeight="17.0" prefWidth="229.0" text="Log In Form" textFill="#fcfcfc">
                <font>
                   <Font size="24.0" />
                </font>
