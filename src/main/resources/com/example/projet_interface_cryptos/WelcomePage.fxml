@@ -37,7 +37,10 @@
             <font>
                <Font size="13.0" />
             </font></Label>
-         <Button layoutX="60.0" layoutY="63.0" mnemonicParsing="false" onAction="#acheterbutton" text="Button" />
+         <Button layoutX="341.0" layoutY="100.0" mnemonicParsing="false" onAction="#acheterbutton" style="-fx-background-color: #263F73;" text="acheter" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font></Button>
       </children>
    </Pane>
 
