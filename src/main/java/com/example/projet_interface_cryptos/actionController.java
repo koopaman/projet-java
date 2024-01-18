@@ -31,15 +31,12 @@ public class actionController {
         try {
             JSONObject stockData = getStockData(apiUrlWithKey);
 
-            // Vérifie si la clé "Time Series (1min)" existe dans l'objet JSON
             if (stockData.has("Time Series (1min)")) {
                 JSONObject timeSeries = stockData.getJSONObject("Time Series (1min)");
 
-                // Obtient la première clé dans l'objet timeSeries
                 String firstKey = timeSeries.keys().next();
                 JSONObject latestData = timeSeries.getJSONObject(firstKey);
 
-                // Obtient le prix de clôture
                 String latestPrice = latestData.getString("4. close");
                 double totalPrice = 18 * Double.parseDouble(latestPrice);
                 actionici.setText("poyohermano possède 18 actions IBM à " + stockSymbol + " soit " + totalPrice + "dollars");

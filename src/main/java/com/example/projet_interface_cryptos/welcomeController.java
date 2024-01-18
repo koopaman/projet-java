@@ -51,9 +51,6 @@ public class welcomeController {
     private TextField symbol;
     @FXML
     private Label stockText;
-
-
-
     public void getStockInfo() {
         // TODO (alexis): delete this line
         System.out.println("I was clicked with " + symbol.getText());
@@ -62,20 +59,20 @@ public class welcomeController {
         try {
             JSONObject stockData = getStockData(apiUrlWithKey);
 
-
+            // Vérifie si la clé "Time Series (1min)" existe dans l'objet JSON
             if (stockData.has("Time Series (1min)")) {
                 JSONObject timeSeries = stockData.getJSONObject("Time Series (1min)");
 
-
+                // Obtient la première clé dans l'objet timeSeries
                 String firstKey = timeSeries.keys().next();
                 JSONObject latestData = timeSeries.getJSONObject(firstKey);
 
-
+                // Obtient le prix de clôture
                 String latestPrice = latestData.getString("4. close");
 
                 stockText.setText("l'action de " + stockSymbol + " vaut " + latestPrice + " dollars ");
             } else {
-
+                // Gérez le cas où la clé "Time Series (1min)" n'est pas présente
                 stockText.setText("aucune valeur trouvée");
             }
         } catch (IOException e) {
